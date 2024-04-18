@@ -1,0 +1,41 @@
+.slider-container {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px 0;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider img {
+   aspect-ratio: 1/0.3;
+    flex-grow: 1;
+    object-fit: cover;
+    transition: .5s ease;
+    border-radius: 20px;
+    margin: 1%;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 350px;
+    opacity: .3;
+    border: none;
+    font-size: 48px;
+    color: #900020;
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }

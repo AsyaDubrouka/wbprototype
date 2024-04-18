@@ -1,0 +1,100 @@
+.shop__itemsheader {
+display: flex;
+justify-content: space-between;
+}
+.h1 {
+    font-family: "Rubik Bubbles", system-ui;
+    font-size: 56px;
+    background-image: linear-gradient(to right, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-clip: text;
+   -webkit-text-fill-color: transparent;
+   }
+.searchBar {
+    border: 1px solid #26272A;
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color: #f8f4ff;
+    }
+
+.input {
+    border: none;
+    outline: none;
+    font-size: 26px;
+}
+
+.input::placeholder {
+     text-align: center;
+     background-color: #f8f4ff;
+    
+   
+}
+.btn__search {
+    border: none;
+    transition: 0.4s;   
+    text-align: center;
+    font-size: 26px;
+   
+}
+.btn__search:hover {
+    text-shadow:
+    1px 1px 2px #26272A,
+    0 0 1em #4158D0,
+    0 0 0.2em #435ace;
+}
+.btn__search:active {
+ transform: rotate(360deg);
+}
+.btn__basket {
+    border: 1px solid #26272A;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 20px;
+    transition: 0.5s;   
+    background-color: #ea61e1;
+}
+.btn__basket:hover {
+    text-shadow:
+    1px 1px 2px #c0c0c0,
+    0 0 1em #4158D0,
+    0 0 0.2em #435ace;
+}
+.btn__basket:active {
+background-color: #435ace;
+}
+@media screen and (max-width: 1140px) {
+    .shop__itemsheader {
+        display: flex;
+        justify-content: space-around;
+        }
+    .h1 {
+       font-size: 44px;
+    }
+    .searchBar {
+        padding: 5px;
+    }
+    .input {
+        font-size: 18px;
+    }
+    .btn__basket {
+        padding: 5px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 720px){
+    .shop__itemsheader {
+        display: flex;
+        justify-content: space-between;
+        } 
+        .h1 {
+            font-size: 34px;
+         }
+        .searchBar {
+            padding: 5px;
+        }
+        .input {
+            font-size: 18px;
+        }
+        .btn__basket {
+            padding: 5px;
+            font-size: 18px;
+        }

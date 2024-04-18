@@ -1,0 +1,55 @@
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  right: 0;
+  top: 15%;
+  width: 100%;
+  height: 50%; 
+
+}
+
+
+.modal.opened {
+  display: block;
+  background-color: #fff;
+  width: 30%; 
+  font-size: 20px;
+ 
+ }
+ .btn__close {
+  background-color: red;
+   }
+ .item__list {
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+ }
+ .item__title {
+  background-color: #fff;
+  padding-right: 10px;
+ }
+ .item__price {
+  background-color: #fff;
+  padding-right: 10px;
+ }
+ .item__total {
+  background-color: #fff;
+  padding-left: 200px
+ }
+ @media screen and (max-width: 720px) {
+  .modal.opened {
+  font-size: 12px;
+  }
+  .item__total {
+  padding-left: 100px;
+  }
+ }
+ @media screen and (max-width: 540px)  {
+  .modal.opened {
+  font-size: 12px;
+  }
+  .item__total {
+  padding-left: 100px;
+  }
+ 
